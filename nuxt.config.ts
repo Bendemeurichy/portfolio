@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@nuxtjs/device',
-    '@nuxtjs/axios',
-      'nuxtjs/color-mode',
+    '@nuxtjs/color-mode'
+    ],
 
-  ],
+  css: ['@/assets/css/main.css'],
 })
