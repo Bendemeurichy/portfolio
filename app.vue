@@ -1,11 +1,17 @@
 <template>
+  <NuxtLoadingIndicator >
+  <Loader/>
+  </NuxtLoadingIndicator>
   <div class="app">
     <div class="header">
       <CollisionBanner/>
     </div>
     <div class="body">
       <ProfileCard />
+      <div class="top-layer">
+      <SocialsCorner />
       <ColorModePicker />
+      </div>
     </div>
   </div>
 </template>
@@ -32,7 +38,13 @@ useColorMode().preference = "dark";
   flex-direction: column;
   align-items: flex-start;
 }
-ColorModePicker{
-  align-self: flex-end;
+
+.top-layer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 5em;
 }
 </style>

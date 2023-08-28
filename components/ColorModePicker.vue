@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {useColorMode} from "#imports";
-
+useColorMode().preference= "dark";
 let colorMode = useColorMode().preference == "dark";
 function changeColor(){
   if (colorMode){
@@ -32,7 +32,7 @@ function changeColor(){
 
 
 .colorMode {
-  align-self: flex-end;
+  align-self: flex-start;
   --dark-sky: var(--primary);
   --moon: #ffd365;
   --light-sky: var(--primary);

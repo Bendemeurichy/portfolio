@@ -5,7 +5,7 @@ let pictureFound = true;
 <template>
   <div class="profileCard">
     <div v-if="pictureFound===true">
-      <img src="assets/pictures/profile" @error="pictureFound=false">
+      <img src="public/profile"  alt="file not found" @error="pictureFound=false">
     </div>
     <div v-else>
       <svg width="200" height="198" viewBox="0 0 200 198"  xmlns="http://www.w3.org/2000/svg" class="placeholder">
@@ -18,14 +18,14 @@ let pictureFound = true;
 <style scoped>
 .profileCard{
   border-radius: 50%;
-  width: 30vh;
-  height: 30vh;
+  width: 20em;
+  height: 20em;
   background: var(--primary);
   overflow: hidden;
   z-index: 1;
   position: absolute;
-  top: 8vh;
-  left: 10vh;
+  top: 6em;
+  left: 7em;
 }
 
 .placeholder{
